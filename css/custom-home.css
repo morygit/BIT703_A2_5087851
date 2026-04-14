@@ -1,18 +1,120 @@
+/* ------------------------------
+   Global styles
+------------------------------ */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.site-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.custom-nav {
+  background: linear-gradient(90deg, #184e3b, #2f7a5f);
+}
+
+.navbar-brand span {
+  font-size: 1rem;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd166 !important;
+}
+
+/* ------------------------------
+   Hero section
+------------------------------ */
+.hero-section {
+  background:
+    linear-gradient(rgba(10, 37, 28, 0.6), rgba(10, 37, 28, 0.6)),
+    url("../images/hero-bg.jpg") center/cover no-repeat;
+  padding: 4rem 0;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.hero-kicker {
+  letter-spacing: 0.08em;
+}
+
+.hero-image {
+  max-height: 460px;
+  object-fit: contain;
+}
+
+/* ------------------------------
+   Cards / sections
+------------------------------ */
+.feature-card,
+.category-card,
+.carousel-panel {
+  background-color: #ffffff;
+}
+
+.category-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.carousel-img {
+  height: 380px;
+  object-fit: cover;
+}
+
+.newsletter-section {
+  background-color: #e9f5ef;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+.footer-custom {
+  background-color: #173f31;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ffd166;
+}
+
+/* ------------------------------
+   Floating anchor
+------------------------------ */
 .floating-anchor {
   position: fixed;
-  right: 24px;
-  bottom: 24px;
-  width: 52px;
-  height: 52px;
+  right: 20px;
+  bottom: 20px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
-  background: #0d6efd;
-  color: #fff;
+  background-color: #198754;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  font-size: 1.4rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -22,5 +124,48 @@
 .floating-anchor.show {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+}
+
+.floating-anchor:hover {
+  background-color: #146c43;
+  color: #ffffff;
+}
+
+/* ------------------------------
+   Responsive breakpoints
+------------------------------ */
+@media (max-width: 991.98px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .carousel-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+
+  .carousel-img {
+    height: 240px;
+  }
+
+  .floating-anchor {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand span {
+    font-size: 0.9rem;
+  }
+
+  .display-4 {
+    font-size: 2.2rem;
+  }
 }

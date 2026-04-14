@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop outdoor gear at Aotearoa Adventure Gear." />
+  <title>Aotearoa Adventure Gear | Shop</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/custom-home.css" />
+  <link rel="stylesheet" href="css/custom-shop.css" />
+</head>
+<body id="top">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle custom-nav py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+          <img src="images/logo.png" alt="Aotearoa Adventure Gear logo" class="site-logo" />
+          <span>Aotearoa Adventure Gear</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Product Detail</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="shipping.html">Shipping</a></li>
+            <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Banner -->
+    <section class="shop-banner text-white">
+      <div class="container py-5">
+        <p class="text-uppercase fw-semibold mb-2">Browse the range</p>
+        <h1 class="display-5 fw-bold mb-3">Adventure Gear Shop</h1>
+        <p class="mb-0">
+          Find hiking, camping, climbing, and outdoor essentials built for New Zealand conditions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="py-3 border-bottom">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Sidebar Filters -->
+          <aside class="col-lg-3">
+            <div class="filter-box p-4 rounded-4 shadow-sm mb-4">
+              <h2 class="h5 fw-bold mb-3">Search</h2>
+              <label for="productSearch" class="visually-hidden">Search products</label>
+              <input
+                type="text"
+                id="productSearch"
+                class="form-control"
+                placeholder="Search gear"
+              />
+            </div>
+
+            <div class="filter-box p-4 rounded-4 shadow-sm mb-4">
+              <h2 class="h5 fw-bold mb-3">Categories</h2>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="catHiking" checked />
+                <label class="form-check-label" for="catHiking">Hiking</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="catCamping" checked />
+                <label class="form-check-label" for="catCamping">Camping</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="catClimbing" checked />
+                <label class="form-check-label" for="catClimbing">Climbing</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="catApparel" checked />
+                <label class="form-check-label" for="catApparel">Apparel</label>
+              </div>
+            </div>
+
+            <div class="filter-box p-4 rounded-4 shadow-sm mb-4">
+              <h2 class="h5 fw-bold mb-3">Price Range</h2>
+              <label for="priceRange" class="form-label">Maximum price: <span id="priceValue">$600</span></label>
+              <input
+                type="range"
+                class="form-range"
+                min="50"
+                max="1000"
+                step="50"
+                value="600"
+                id="priceRange"
+              />
+            </div>
+
+            <div class="filter-box p-4 rounded-4 shadow-sm">
+              <h2 class="h5 fw-bold mb-3">Popular Tags</h2>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-success">Waterproof</span>
+                <span class="badge text-bg-success">Lightweight</span>
+                <span class="badge text-bg-success">Trail</span>
+                <span class="badge text-bg-success">Camping</span>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Product Listing -->
+          <section class="col-lg-9">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+              <div>
+                <h2 class="h4 fw-bold mb-1">All Products</h2>
+                <p class="text-muted mb-0">Showing 8 products</p>
+              </div>
+
+              <div class="d-flex gap-2 align-items-center">
+                <label for="sortProducts" class="fw-semibold">Sort by:</label>
+                <select id="sortProducts" class="form-select">
+                  <option selected>Featured</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                  <option>Newest</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Product 1 -->
+              <div class="col-sm-6 col-xl-4">
+                <article class="card product-card border-0 shadow-sm h-100">
+                  <img src="images/product-1.jpg" class="card-img-top product-img" alt="Alpine hiking backpack">
+                  <div class="card-body">
+                    <p class="small text-success fw-semibold mb-1">Hiking</p>
+                    <h3 class="h5">Alpine Hiking Backpack</h3>
+                    <p class="text-muted small">Durable multi-day backpack with ergonomic support.</p>
+                    <p class="fw-bold fs-5 mb-3">$249.00</p>
+                    <div class="d-flex gap-2">
+                      <a href="product.html" class="btn btn-success btn-sm">View</a>
+                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="col-sm-6 col-xl-4">
+                <article class="card product-card border-0 shadow-sm h-100">
+                  <img src="images/product-2.jpg" class="card-img-top product-img" alt="Explorer tent">
+                  <div class="card-body">
+                    <p class="small text-success fw-semibold mb-1">Camping</p>
+                    <h3 class="h5">Explorer Tent</h3>
+                    <p class="text-muted small">Four-season tent designed for changing alpine weather.</p>
+                    <p class="fw-bold fs-5 mb-3">$399.00</p>
+                    <div class="d-flex gap-2">
+                      <a href="product.html" class="btn btn-success btn-sm">View</a>
+                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="col-sm-6 col-xl-4">
+                <article class="card product-card border-0 shadow-sm h-100">
+                  <img src="images/product-3.jpg" class="card-img-top product-img" alt="Trekking boots">
+                  <div class="card-body">
+                    <p class="small text-success fw-semibold mb-1">Apparel</p>
+                    <h3 class="h5">Trekking Boots</h3>
+                    <p class="text-muted small">Waterproof boots with strong grip for steep terrain.</p>
+                    <p class="fw-bold fs-5 mb-3">$189.00</p>
+                    <div class="d-flex gap-2">
+                      <a href="product.html" class="btn btn-success btn-sm">View</a>
+                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="col-sm-6 col-xl-4">
+                <article class="card product-card border-0 shadow-sm h-100">
+                  <img src="images/category-hiking.jpg" class="card-img-top product-img" alt="Hiking poles">
+                  <div class="card-body">
+                    <p class="small text-success fw-semibold mb-1">Hiking</p>
+                    <h3 class="h5">Carbon Hiking Poles</h3>
+                    <p class="text-muted small">Lightweight and adjustable poles for trail stability.</p>
+                    <p class="fw-bold fs-5 mb-3">$129.00</p>
+                    <div class="d-flex gap-2">
+                      <a href="product.html" class="btn btn-success btn-sm">View</a>
+                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product 5 -->
+              <div class="col-sm-6 col-xl-4">
+                <article class="card product-card border-0 shadow-sm h-100">
+                  <img src="images/category-camping.jpg" class="card-img-top product-img" alt="Camping stove">
+                  <div class="card-body">
+                    <p class="small text-success fw-semibold mb-1">Camping</p>
+                    <h3 class="h5">Portable Camping Stove</h3>
+                    <p class="text-muted small">Compact cooking setup for overnight and remote campsites.</p>
+                    <p class="fw-bold fs-5 mb-3">$89.00</p>
+                    <div class="d-flex gap-2">
+                      <a href="product.html" class="btn btn-success btn-sm">View</a>
+                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product 6 -->
+              <div class="col-sm-6 col-xl-4">
+                <article class="card product-card border-0 shadow-sm h-100">
+                  <img src="images/category-climbing.jpg" class="card-img-top product-img" alt="Climbing helmet">
+                  <div class="card-body">
+                    <p class="small text-success fw-semibold mb-1">Climbing</p>
+                    <h3 class="h5">Climbing Helmet</h3>
+                    <p class="text-muted small">Protective, lightweight helmet for alpine and sport climbing.</p>
+                    <p class="fw-bold fs-5 mb-3">$139.00</p>
+                    <div class="d-flex gap-2">
+                      <a href="product.html" class="btn btn-success btn-sm">View</a>
+                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product 7 -->
+              <div class="col-sm-6 col-xl-4">
+                <article class="card product-card border-0 shadow-sm h-100">
+                  <img src="images/category-apparel.jpg" class="card-img-top product-img" alt="Outdoor jacket">
+                  <div class="card-body">
+                    <p class="small text-success fw-semibold mb-1">Apparel</p>
+                    <h3 class="h5">Stormproof Jacket</h3>
+                    <p class="text-muted small">Weather-resistant shell jacket for unpredictable conditions.</p>
+                    <p class="fw-bold fs-5 mb-3">$279.00</p>
+                    <div class="d-flex gap-2">
+                      <a href="product.html" class="btn btn-success btn-sm">View</a>
+                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product 8 -->
+              <div class="col-sm-6 col-xl-4">
+                <article class="card product-card border-0 shadow-sm h-100">
+                  <img src="images/product-1.jpg" class="card-img-top product-img" alt="Hydration pack">
+                  <div class="card-body">
+                    <p class="small text-success fw-semibold mb-1">Hiking</p>
+                    <h3 class="h5">Hydration Pack</h3>
+                    <p class="text-muted small">Compact hydration pack for fast-moving outdoor activities.</p>
+                    <p class="fw-bold fs-5 mb-3">$99.00</p>
+                    <div class="d-flex gap-2">
+                      <a href="product.html" class="btn btn-success btn-sm">View</a>
+                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5" aria-label="Shop pagination">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><span class="page-link">Previous</span></li>
+                <li class="page-item active"><span class="page-link">1</span></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-5 footer-custom text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h2 class="h5">Aotearoa Adventure Gear</h2>
+          <p>
+            Premium outdoor equipment for explorers across New Zealand. Built for performance,
+            reliability, and comfort in every environment.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h2 class="h5">Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="shipping.html" class="footer-link">Shipping Details</a></li>
+            <li><a href="payment.html" class="footer-link">Payment Options</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h2 class="h5">Contact</h2>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Auckland, New Zealand</p>
+          <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>info@aotearoaadventuregear.co.nz</p>
+          <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>0800 555 888</p>
+        </div>
+      </div>
+
+      <hr class="my-4 border-light-subtle" />
+      <p class="mb-0 text-center">&copy; 2026 Aotearoa Adventure Gear. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#top" id="backToTop" class="floating-anchor" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

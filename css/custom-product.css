@@ -1,0 +1,63 @@
+.product-banner {
+  background:
+    linear-gradient(rgba(10, 37, 28, 0.65), rgba(10, 37, 28, 0.65)),
+    url("../images/hero-bg.jpg") center/cover no-repeat;
+}
+
+.product-gallery-card {
+  background-color: #ffffff;
+}
+
+.product-main-image {
+  height: 430px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.thumb-image {
+  height: 110px;
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.thumb-image:hover {
+  border-color: #198754;
+  transform: translateY(-2px);
+}
+
+.product-highlights li {
+  margin-bottom: 0.65rem;
+}
+
+.nav-tabs .nav-link {
+  color: #198754;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+  color: #ffffff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.review-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .product-main-image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product-main-image {
+    height: 300px;
+  }
+
+  .thumb-image {
+    height: 90px;
+  }
+}

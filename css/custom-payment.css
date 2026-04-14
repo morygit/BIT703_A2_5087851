@@ -1,0 +1,29 @@
+.payment-banner {
+  background:
+    linear-gradient(rgba(10, 37, 28, 0.65), rgba(10, 37, 28, 0.65)),
+    url("../images/hero-bg.jpg") center/cover no-repeat;
+}
+
+.payment-option {
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.payment-option:hover {
+  border-color: #198754;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.order-summary {
+  top: 100px;
+}
+
+.secure-box {
+  background-color: #e9f5ef;
+}
+
+@media (max-width: 991.98px) {
+  .order-summary {
+    position: static !important;
+  }
+}
