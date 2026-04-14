@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aotearoa Adventure Gear | Cart</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/custom-home.css"/>
+  <link rel="stylesheet" href="css/custom-cart.css"/>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Aotearoa Adventure Gear</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="shipping.html">Shipping</a></li>
+          <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="cart-header text-center text-white py-5">
+    <div class="container">
+      <h1>Your Shopping Cart</h1>
+      <p>Review your items before checkout</p>
+    </div>
+  </header>
+
+  <!-- CART TABLE -->
+  <section class="py-5">
+    <div class="container">
+
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead class="table-success">
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="images/product-1.jpg" width="80" alt="">
+                  <span>Alpine Hiking Backpack</span>
+                </div>
+              </td>
+              <td>$249</td>
+              <td>
+                <input type="number" value="1" min="1" class="form-control quantity" style="width:80px;">
+              </td>
+              <td class="item-total">$249</td>
+              <td>
+                <button class="btn btn-danger btn-sm remove-btn">X</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="images/product-3.jpg" width="80" alt="">
+                  <span>Trekking Boots</span>
+                </div>
+              </td>
+              <td>$189</td>
+              <td>
+                <input type="number" value="1" min="1" class="form-control quantity" style="width:80px;">
+              </td>
+              <td class="item-total">$189</td>
+              <td>
+                <button class="btn btn-danger btn-sm remove-btn">X</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="row mt-5">
+        <div class="col-md-6"></div>
+
+        <div class="col-md-6">
+          <div class="cart-summary p-4 shadow rounded">
+            <h4>Cart Summary</h4>
+            <hr>
+
+            <p>Subtotal: <span id="subtotal">$438</span></p>
+            <p>Shipping: <span>$20</span></p>
+
+            <h5>Total: <span id="total">$458</span></h5>
+
+            <a href="shipping.html" class="btn btn-success w-100 mt-3">
+              Proceed to Shipping
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2026 Aotearoa Adventure Gear</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

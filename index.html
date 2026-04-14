@@ -1,54 +1,363 @@
-
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>BIT703 A2 Starter</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aotearoa Adventure Gear - premium outdoor equipment for New Zealand adventurers." />
+  <title>Aotearoa Adventure Gear | Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom-home.css" />
+</head>
 <body id="top">
-<p>Starter notes will be prepared in chat.</p>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle custom-nav py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+          <img src="images/logo.png" alt="Aotearoa Adventure Gear logo" class="site-logo" />
+          <span>Aotearoa Adventure Gear</span>
+        </a>
 
-<section class="container my-5">
-  <h2 class="mb-4">Featured Products</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product Detail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shipping.html">Shipping</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="payment.html">Payment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section text-white">
+      <div class="container">
+        <div class="row align-items-center min-vh-75">
+          <div class="col-lg-6">
+            <p class="text-uppercase fw-semibold mb-2 hero-kicker">Ready for every trail</p>
+            <h1 class="display-4 fw-bold mb-3">Premium outdoor gear for Aotearoa adventures</h1>
+            <p class="lead mb-4">
+              Explore durable, high-performance equipment for hiking, camping, climbing,
+              and backcountry travel across New Zealand.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="shop.html" class="btn btn-warning btn-lg px-4">Shop Now</a>
+              <a href="#featured-products" class="btn btn-outline-light btn-lg px-4">View Featured Gear</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 text-center">
+            <img
+              src="images/hero-gear.png"
+              alt="Outdoor adventure equipment display"
+              class="img-fluid hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-sm-6 col-lg-3">
+            <div class="feature-card h-100 p-4 rounded-4 shadow-sm">
+              <i class="bi bi-tree fs-1 text-success"></i>
+              <h2 class="h5 mt-3">NZ Ready</h2>
+              <p class="mb-0">Gear selected for local conditions, from alpine tracks to coastal camping.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="feature-card h-100 p-4 rounded-4 shadow-sm">
+              <i class="bi bi-truck fs-1 text-success"></i>
+              <h2 class="h5 mt-3">Fast Delivery</h2>
+              <p class="mb-0">Quick dispatch across New Zealand with reliable shipping options.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="feature-card h-100 p-4 rounded-4 shadow-sm">
+              <i class="bi bi-shield-check fs-1 text-success"></i>
+              <h2 class="h5 mt-3">Trusted Quality</h2>
+              <p class="mb-0">Built for durability, comfort, and safety in demanding environments.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="feature-card h-100 p-4 rounded-4 shadow-sm">
+              <i class="bi bi-chat-dots fs-1 text-success"></i>
+              <h2 class="h5 mt-3">Expert Advice</h2>
+              <p class="mb-0">Get support choosing the right equipment for your next trip.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Carousel -->
+    <section id="featured-products" class="py-5">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+          <div>
+            <p class="text-uppercase text-success fw-semibold mb-1">Top picks</p>
+            <h2 class="fw-bold mb-0">Featured Products</h2>
+          </div>
+          <a href="shop.html" class="btn btn-outline-success mt-3 mt-md-0">Browse All Products</a>
+        </div>
+
+        <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner rounded-4 overflow-hidden shadow">
+            <div class="carousel-item active">
+              <div class="row g-0 align-items-center carousel-panel">
+                <div class="col-lg-6">
+                  <img src="images/product-1.jpg" class="d-block w-100 carousel-img" alt="Premium hiking backpack">
+                </div>
+                <div class="col-lg-6 p-4 p-md-5">
+                  <p class="text-uppercase text-success fw-semibold mb-2">Featured</p>
+                  <h3 class="fw-bold">Alpine Hiking Backpack</h3>
+                  <p class="mb-3">
+                    Lightweight, weather-resistant, and designed for multi-day hikes.
+                  </p>
+                  <p class="fw-bold fs-5">$249.00</p>
+                  <a href="product.html" class="btn btn-success">View Product</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 align-items-center carousel-panel">
+                <div class="col-lg-6">
+                  <img src="images/product-2.jpg" class="d-block w-100 carousel-img" alt="Four-season tent">
+                </div>
+                <div class="col-lg-6 p-4 p-md-5">
+                  <p class="text-uppercase text-success fw-semibold mb-2">Featured</p>
+                  <h3 class="fw-bold">Explorer Tent</h3>
+                  <p class="mb-3">
+                    Spacious and durable shelter ideal for camping in changing weather.
+                  </p>
+                  <p class="fw-bold fs-5">$399.00</p>
+                  <a href="product.html" class="btn btn-success">View Product</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row g-0 align-items-center carousel-panel">
+                <div class="col-lg-6">
+                  <img src="images/product-3.jpg" class="d-block w-100 carousel-img" alt="Trekking boots">
+                </div>
+                <div class="col-lg-6 p-4 p-md-5">
+                  <p class="text-uppercase text-success fw-semibold mb-2">Featured</p>
+                  <h3 class="fw-bold">Trekking Boots</h3>
+                  <p class="mb-3">
+                    High-grip sole and waterproof finish for rough terrain and wet tracks.
+                  </p>
+                  <p class="fw-bold fs-5">$189.00</p>
+                  <a href="product.html" class="btn btn-success">View Product</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-success fw-semibold mb-1">Explore</p>
+          <h2 class="fw-bold">Shop by Category</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <article class="category-card card border-0 shadow-sm h-100">
+              <img src="images/category-hiking.jpg" class="card-img-top" alt="Hiking equipment">
+              <div class="card-body">
+                <h3 class="h5">Hiking</h3>
+                <p class="card-text">Backpacks, poles, hydration, and essential trail gear.</p>
+                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Hiking</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <article class="category-card card border-0 shadow-sm h-100">
+              <img src="images/category-camping.jpg" class="card-img-top" alt="Camping equipment">
+              <div class="card-body">
+                <h3 class="h5">Camping</h3>
+                <p class="card-text">Tents, sleeping bags, cooking gear, and lighting.</p>
+                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Camping</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <article class="category-card card border-0 shadow-sm h-100">
+              <img src="images/category-climbing.jpg" class="card-img-top" alt="Climbing gear">
+              <div class="card-body">
+                <h3 class="h5">Climbing</h3>
+                <p class="card-text">Harnesses, helmets, ropes, and safety accessories.</p>
+                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Climbing</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <article class="category-card card border-0 shadow-sm h-100">
+              <img src="images/category-apparel.jpg" class="card-img-top" alt="Outdoor clothing">
+              <div class="card-body">
+                <h3 class="h5">Apparel</h3>
+                <p class="card-text">Outdoor jackets, thermal wear, boots, and accessories.</p>
+                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Apparel</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 newsletter-section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h2 class="fw-bold mb-2">Get trail updates and exclusive offers</h2>
+            <p class="mb-0">
+              Join our newsletter for product launches, seasonal promotions, and outdoor tips.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <form class="row g-2" novalidate>
+              <div class="col-8">
+                <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                <input
+                  type="email"
+                  id="newsletterEmail"
+                  class="form-control form-control-lg"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="col-4 d-grid">
+                <button type="submit" class="btn btn-warning btn-lg">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5 footer-custom text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h2 class="h5">Aotearoa Adventure Gear</h2>
+          <p>
+            Premium outdoor equipment for explorers across New Zealand. Built for performance,
+            reliability, and comfort in every environment.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h2 class="h5">Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="shop.html" class="footer-link">Shop</a></li>
+            <li><a href="shipping.html" class="footer-link">Shipping Details</a></li>
+            <li><a href="payment.html" class="footer-link">Payment Options</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h2 class="h5">Contact</h2>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Auckland, New Zealand</p>
+          <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>info@aotearoaadventuregear.co.nz</p>
+          <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>0800 555 888</p>
+        </div>
+      </div>
+
+      <hr class="my-4 border-light-subtle" />
+      <p class="mb-0 text-center">&copy; 2026 Aotearoa Adventure Gear. All rights reserved.</p>
     </div>
+  </footer>
 
-    <div class="carousel-inner rounded overflow-hidden">
-      <div class="carousel-item active">
-        <img src="images/product-1.jpg" class="d-block w-100" alt="Featured hiking backpack">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Premium Hiking Backpack</h5>
-          <p>Built for rugged New Zealand conditions.</p>
-        </div>
-      </div>
+  <!-- Floating Anchor -->
+  <a href="#top" id="backToTop" class="floating-anchor" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
 
-      <div class="carousel-item">
-        <img src="images/product-2.jpg" class="d-block w-100" alt="Featured camping tent">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>All-Weather Tent</h5>
-          <p>Reliable shelter for every adventure.</p>
-        </div>
-      </div>
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
 
-      <div class="carousel-item">
-        <img src="images/product-3.jpg" class="d-block w-100" alt="Featured trekking boots">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Trekking Boots</h5>
-          <p>Comfort and grip for long-distance trails.</p>
-        </div>
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
