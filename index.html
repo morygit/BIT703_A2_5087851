@@ -32,27 +32,45 @@
 <body id="top">
   <!-- Header -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle custom-nav py-3">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
-          <img src="images/logo.png" alt="Aotearoa Adventure Gear logo" class="site-logo" />
-          <span>Aotearoa Adventure Gear</span>
-        </a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle custom-nav py-3">
+    <div class="container">
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- LOGO -->
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+        <img src="images/logo.png" alt="Aotearoa Adventure Gear logo" class="site-logo" />
+      </a>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+      <!-- TOGGLE -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <!-- LEFT NAV LINKS -->
+          <!-- SEARCH -->
+          <form class="d-flex">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search gear..."
+              aria-label="Search"
+            >
+          </form>
+
+        <!-- RIGHT SIDE -->
+        <div class="d-flex align-items-center ms-auto gap-3 mt-3 mt-lg-0">
+
+          <ul class="navbar-nav ms-3 align-items-lg-center gap-lg-2">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
             </li>
@@ -63,48 +81,42 @@
               <a class="nav-link" href="product.html">Product Detail</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cart.html">Cart</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="shipping.html">Shipping</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="payment.html">Payment</a>
             </li>
+            <li class="nav-item">
+              <!-- CART BUTTON -->
+              <a href="cart.html" class="btn btn-warning fw-semibold px-3">🛒 Cart</a>
           </ul>
+
         </div>
+
       </div>
-    </nav>
+    </div>
+  </nav>
   </header>
 
   <main>
     <!-- Hero Section -->
-    <section class="hero-section text-white">
-      <div class="container">
-        <div class="row align-items-center min-vh-75">
-          <div class="col-lg-6">
-            <p class="text-uppercase fw-semibold mb-2 hero-kicker">Ready for every trail</p>
-            <h1 class="display-4 fw-bold mb-3">Premium outdoor gear for Aotearoa adventures</h1>
-            <p class="lead mb-4">
-              Explore durable, high-performance equipment for hiking, camping, climbing,
-              and backcountry travel across New Zealand.
-            </p>
-            <div class="d-flex flex-wrap gap-3">
-              <a href="shop.html" class="btn btn-warning btn-lg px-4">Shop Now</a>
-              <a href="#featured-products" class="btn btn-outline-light btn-lg px-4">View Featured Gear</a>
-            </div>
-          </div>
+  <section class="hero-section d-flex align-items-center">
+    <div class="container text-white">
+      <p class="text-uppercase fw-semibold">Ready for every trail</p>
 
-          <div class="col-lg-6 mt-5 mt-lg-0 text-center">
-            <img
-              src="images/hero-gear.png"
-              alt="Outdoor adventure equipment display"
-              class="img-fluid hero-image"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+      <h1 class="display-4 fw-bold">
+        Premium outdoor gear for Aotearoa adventures
+      </h1>
+
+      <p class="lead">
+        Explore durable, high-performance equipment for hiking,
+        camping, climbing, and backcountry travel across New Zealand.
+      </p>
+
+      <a href="shop.html" class="btn btn-warning me-2">Shop Now</a>
+      <a href="shop.html" class="btn btn-outline-light">View Featured Gear</a>
+    </div>
+  </section>
 
     <!-- Highlights -->
     <section class="py-5 bg-light">
@@ -225,63 +237,7 @@
       </div>
     </section>
 
-    <!-- Categories -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="text-center mb-5">
-          <p class="text-uppercase text-success fw-semibold mb-1">Explore</p>
-          <h2 class="fw-bold">Shop by Category</h2>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <article class="category-card card border-0 shadow-sm h-100">
-              <img src="images/category-hiking.jpg" class="card-img-top" alt="Hiking equipment">
-              <div class="card-body">
-                <h3 class="h5">Hiking</h3>
-                <p class="card-text">Backpacks, poles, hydration, and essential trail gear.</p>
-                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Hiking</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-sm-6 col-lg-3">
-            <article class="category-card card border-0 shadow-sm h-100">
-              <img src="images/category-camping.jpg" class="card-img-top" alt="Camping equipment">
-              <div class="card-body">
-                <h3 class="h5">Camping</h3>
-                <p class="card-text">Tents, sleeping bags, cooking gear, and lighting.</p>
-                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Camping</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-sm-6 col-lg-3">
-            <article class="category-card card border-0 shadow-sm h-100">
-              <img src="images/category-climbing.jpg" class="card-img-top" alt="Climbing gear">
-              <div class="card-body">
-                <h3 class="h5">Climbing</h3>
-                <p class="card-text">Harnesses, helmets, ropes, and safety accessories.</p>
-                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Climbing</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-sm-6 col-lg-3">
-            <article class="category-card card border-0 shadow-sm h-100">
-              <img src="images/category-apparel.jpg" class="card-img-top" alt="Outdoor clothing">
-              <div class="card-body">
-                <h3 class="h5">Apparel</h3>
-                <p class="card-text">Outdoor jackets, thermal wear, boots, and accessories.</p>
-                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Apparel</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter -->
+        <!-- Newsletter -->
     <section class="py-5 newsletter-section">
       <div class="container">
         <div class="row align-items-center g-4">
@@ -306,6 +262,62 @@
                 <button type="submit" class="btn btn-warning btn-lg">Subscribe</button>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-5 bg-light categories-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-uppercase text-success fw-semibold mb-1">Explore</p>
+          <h2 class="fw-bold">Shop by Category</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <article class="category-card card border-0 shadow-sm h-100">
+              <img src="images/product-4.jpg" class="card-img-top" alt="Hiking equipment">
+              <div class="card-body">
+                <h3 class="h5">Hiking</h3>
+                <p class="card-text">Backpacks, poles, hydration, and essential trail gear.</p>
+                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Hiking</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <article class="category-card card border-0 shadow-sm h-100">
+              <img src="images/product-8.jpg" class="card-img-top" alt="Camping equipment">
+              <div class="card-body">
+                <h3 class="h5">Camping</h3>
+                <p class="card-text">Tents, sleeping bags, cooking gear, and lighting.</p>
+                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Camping</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <article class="category-card card border-0 shadow-sm h-100">
+              <img src="images/product-5.jpg" class="card-img-top" alt="Climbing gear">
+              <div class="card-body">
+                <h3 class="h5">Climbing</h3>
+                <p class="card-text">Harnesses, helmets, ropes, and safety accessories.</p>
+                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Climbing</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <article class="category-card card border-0 shadow-sm h-100">
+              <img src="images/product-7.jpg" class="card-img-top" alt="Outdoor clothing">
+              <div class="card-body">
+                <h3 class="h5">Apparel</h3>
+                <p class="card-text">Outdoor jackets, thermal wear, boots, and accessories.</p>
+                <a href="shop.html" class="stretched-link text-success fw-semibold">Shop Apparel</a>
+              </div>
+            </article>
           </div>
         </div>
       </div>

@@ -28,11 +28,13 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle custom-nav py-3">
       <div class="container">
+
+        <!-- LOGO -->
         <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
           <img src="images/logo.png" alt="Aotearoa Adventure Gear logo" class="site-logo" />
-          <span>Aotearoa Adventure Gear</span>
         </a>
 
+        <!-- TOGGLE -->
         <button
           class="navbar-toggler"
           type="button"
@@ -45,15 +47,46 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- MENU -->
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-            <li class="nav-item"><a class="nav-link" href="product.html">Product Detail</a></li>
-            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-            <li class="nav-item"><a class="nav-link" href="shipping.html">Shipping</a></li>
-            <li class="nav-item"><a class="nav-link active" href="payment.html">Payment</a></li>
-          </ul>
+
+          <!-- LEFT NAV LINKS -->
+            <!-- SEARCH -->
+            <form class="d-flex">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search gear..."
+                aria-label="Search"
+              >
+            </form>
+
+          <!-- RIGHT SIDE -->
+          <div class="d-flex align-items-center ms-auto gap-3 mt-3 mt-lg-0">
+
+            <ul class="navbar-nav ms-3 align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product Detail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shipping.html">Shipping</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="payment.html">Payment</a>
+              </li>
+              <li class="nav-item">
+                <!-- CART BUTTON -->
+                <a href="cart.html" class="btn btn-warning fw-semibold px-3">🛒 Cart</a>
+            </ul>
+
+          </div>
+
         </div>
       </div>
     </nav>
@@ -88,7 +121,7 @@
       <div class="container">
         <div class="row g-5">
           <!-- Payment Form -->
-          <section class="col-lg-8">
+          <section class="col-lg-7">
             <div class="bg-white shadow-sm rounded-4 p-4 p-md-5">
               <h2 class="fw-bold mb-4">Select Payment Method</h2>
 
@@ -245,34 +278,41 @@
           </section>
 
           <!-- Order Summary -->
-          <aside class="col-lg-4">
-            <div class="bg-white shadow-sm rounded-4 p-4 order-summary sticky-top">
-              <h2 class="h4 fw-bold mb-4">Order Summary</h2>
+          <aside class="col-lg-5">
+            <div class="summary-box p-4 shadow rounded order-summary sticky-top">
+              <h4>Order Summary</h4>
 
               <div class="d-flex justify-content-between mb-3">
-                <span>Alpine Hiking Backpack</span>
-                <span>$249.00</span>
+                <span>Items Subtotal</span>
+                <span id="paymentSubtotal">$0.00</span>
+              </div>
+               
+              <div class="d-flex justify-content-between mb-3">
+                <span>Tax (15%):</span>
+                <span id="paymentTax">$0.00</span>
               </div>
 
               <div class="d-flex justify-content-between mb-3">
-                <span>Trekking Boots</span>
-                <span>$189.00</span>
+                <span>Shipping Method</span>
+                <span id="paymentShippingMethod">-</span>
               </div>
 
               <div class="d-flex justify-content-between mb-3">
-                <span>Shipping</span>
-                <span>$20.00</span>
+                <span>Shipping Cost</span>
+                <span id="paymentShipping">$0.00</span>
               </div>
 
               <hr>
 
               <div class="d-flex justify-content-between fw-bold fs-5">
                 <span>Total</span>
-                <span>$458.00</span>
+                <span id="paymentTotal">$0.00</span>
               </div>
 
               <div class="mt-4 p-3 rounded-3 secure-box">
-                <p class="mb-2 fw-semibold"><i class="bi bi-shield-lock-fill me-2"></i>Secure Checkout</p>
+                <p class="mb-2 fw-semibold">
+                  <i class="bi bi-shield-lock-fill me-2"></i>Secure Checkout
+                </p>
                 <p class="mb-0 small">
                   Your payment information is protected using secure client-side validation and form handling.
                 </p>

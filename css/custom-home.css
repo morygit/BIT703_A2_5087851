@@ -13,7 +13,7 @@ img {
 }
 
 .site-logo {
-  width: 44px;
+  width: 86px;
   height: 44px;
   object-fit: contain;
 }
@@ -23,7 +23,7 @@ img {
 }
 
 .navbar-brand span {
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 .nav-link {
@@ -35,14 +35,32 @@ img {
   color: #ffd166 !important;
 }
 
+
+.navbar .form-control {
+  width: 200px;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.categories-section {
+  background-color: #e9f5ef;
+}
 /* ------------------------------
    Hero section
 ------------------------------ */
 .hero-section {
-  background:
-    linear-gradient(rgba(10, 37, 28, 0.6), rgba(10, 37, 28, 0.6)),
-    url("../images/hero-bg.jpg") center/cover no-repeat;
-  padding: 4rem 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('../images/hero-gear.png') center/cover no-repeat;
+
+  min-height: 90vh;
+  display: flex;
 }
 
 .min-vh-75 {
@@ -66,6 +84,9 @@ img {
 .carousel-panel {
   background-color: #ffffff;
 }
+.categories-section {
+  background-color: #e9f5ef !important;
+}
 
 .category-card img {
   height: 220px;
@@ -78,7 +99,7 @@ img {
 }
 
 .newsletter-section {
-  background-color: #e9f5ef;
+  background-color: #f8f9fa;
 }
 
 /* ------------------------------

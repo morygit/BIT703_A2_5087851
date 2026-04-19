@@ -5,91 +5,235 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shipping | Aotearoa Adventure Gear</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/custom-home.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/custom-home.css" />
   <link rel="stylesheet" href="css/custom-shipping.css">
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle custom-nav py-3">
+      <div class="container">
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success py-3">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Aotearoa Adventure Gear</a>
-    <div class="ms-auto">
-      <a href="cart.html" class="nav-link text-white">Cart</a>
-    </div>
-  </div>
-</nav>
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+          <img src="images/logo.png" alt="Aotearoa Adventure Gear logo" class="site-logo" />
+        </a>
 
-<!-- HEADER -->
-<header class="shipping-header text-white text-center py-5">
-  <div class="container">
-    <h1>Shipping Details</h1>
-    <p>Enter your delivery information</p>
-  </div>
-</header>
+        <!-- TOGGLE -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- FORM -->
-<section class="py-5">
-  <div class="container">
-    <div class="row">
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="mainNav">
 
-      <!-- LEFT FORM -->
-      <div class="col-md-7">
-        <form id="shippingForm">
+          <!-- LEFT NAV LINKS -->
+            <!-- SEARCH -->
+            <form class="d-flex">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search gear..."
+                aria-label="Search"
+              >
+            </form>
 
-          <div class="mb-3">
-            <label>Name</label>
-            <input type="text" class="form-control" required>
+          <!-- RIGHT SIDE -->
+          <div class="d-flex align-items-center ms-auto gap-3 mt-3 mt-lg-0">
+
+            <ul class="navbar-nav ms-3 align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product Detail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="shipping.html">Shipping</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="payment.html">Payment</a>
+              </li>
+              <li class="nav-item">
+              <!-- CART BUTTON -->
+                <a href="cart.html" class="btn btn-warning fw-semibold px-3">🛒 Cart</a>
+              </li>
+            </ul>
+
           </div>
-
-          <div class="mb-3">
-            <label>Address</label>
-            <input type="text" class="form-control" required>
-          </div>
-
-          <div class="mb-3">
-            <label>City</label>
-            <input type="text" class="form-control" required>
-          </div>
-
-          <div class="mb-3">
-            <label>Postcode</label>
-            <input type="text" class="form-control" required>
-          </div>
-
-          <a href="payment.html" class="btn btn-success mt-3">Continue to Payment</a>
-
-        </form>
-      </div>
-
-      <!-- RIGHT SUMMARY -->
-      <div class="col-md-5">
-        <div class="summary-box p-4 shadow rounded">
-
-          <h4>Order Summary</h4>
-          <hr>
-
-          <p>Subtotal: <span id="subtotal">$500</span></p>
-          <p>Shipping: <span id="shippingCost">$20</span></p>
-
-          <h5>Total: <span id="total">$520</span></h5>
-
-          <p id="shippingMessage" class="mt-3 text-success fw-bold"></p>
 
         </div>
       </div>
+    </nav>
+  </header>
 
-    </div>
-  </div>
-</section>
+  <main>
+      <!-- Banner -->
+      <section class="shipping-banner text-white">
+        <div class="container py-5">
+          <p class="text-uppercase fw-semibold mb-2">Your Shipping Information</p>
+          <h1 class="display-5 fw-bold mb-2">Shipping Details</h1>
+          <p class="mb-0">Enter your delivery information below</p>
+        </div>
+      </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-4">
-  <p>&copy; 2026 Aotearoa Adventure Gear</p>
-</footer>
+      <!-- Breadcrumb -->
+      <section class="py-3 border-bottom">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
+              <li class="breadcrumb-item"><a href="shipping.html">Shipping</a></li>
+              <li class="breadcrumb-item">Payment</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
 
-<script src="js/main.js"></script>
+      <!-- FORM -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+
+           <!-- LEFT FORM -->
+            <div class="col-md-7">
+              <form id="shippingForm" novalidate>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" id="firstName" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your first name.</div>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" id="lastName" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your last name.</div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="address1" class="form-label">Address 1</label>
+                  <input type="text" id="address1" class="form-control" required>
+                  <div class="invalid-feedback">Please enter address line 1.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="address2" class="form-label">Address 2</label>
+                  <input type="text" id="address2" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="phoneNumber" class="form-label">Phone Number</label>
+                  <input type="tel" id="phoneNumber" class="form-control" pattern="[0-9+\s()-]{8,15}" required>
+                  <div class="invalid-feedback">Please enter a valid phone number.</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" id="city" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your city.</div>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <label for="postcode" class="form-label">Postcode</label>
+                    <input type="text" id="postcode" class="form-control" pattern="[0-9]{4}" required>
+                    <div class="invalid-feedback">Please enter a valid 4-digit postcode.</div>
+                  </div>
+                </div>
+
+                <!-- SHIPPING METHOD -->
+                <div class="mt-4 mb-3">
+                  <label class="form-label fw-semibold d-block">Select Shipping Method</label>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="shipping-option-box w-100">
+                        <input type="radio" name="shippingMethod" value="standard" class="shipping-method-input" required>
+                        <div class="shipping-option-content">
+                          <div class="fw-semibold">Standard Shipping - 10$</div>
+                          <small class="text-muted">Between 2 - 5 working days</small>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="shipping-option-box w-100">
+                        <input type="radio" name="shippingMethod" value="nextday" class="shipping-method-input" required>
+                        <div class="shipping-option-content">
+                          <div class="fw-semibold">Next Day Delivery - $20</div>
+                          <small class="text-muted">24 hours from checkout</small>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div id="shippingMethodError" class="text-danger small mt-2 d-none">
+                    Please select a shipping method.
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-success mt-3">
+                  Continue to Payment
+                </button>
+              </form>
+            </div>
+
+            <!-- RIGHT SUMMARY -->
+            <div class="col-md-5">
+              <div class="summary-box p-4 shadow rounded">
+                
+                <h4>Order Summary</h4>
+                <hr>
+
+                <p>Subtotal: <span id="subtotal">$0</span></p>
+                <p>Tax (15%): <span id="tax">$0.00</span></p>
+                <p>Shipping: <span id="shippingCost">$0</span></p>
+                <p id="freeShippingMsg" class="text-success fw-semibold mb-3 d-none">🎉 You qualify for FREE standard shipping!</p>
+                <h5>Total: <span id="total">$0</span></h5>
+                <p id="shippingMessage" class="mt-3 text-success fw-bold"></p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2026 Aotearoa Adventure Gear</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

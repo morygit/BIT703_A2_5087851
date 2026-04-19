@@ -1,10 +1,53 @@
-.shipping-header {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("../images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
+.shipping-banner {
+  background:
+    linear-gradient(rgba(10, 37, 28, 0.65), rgba(10, 37, 28, 0.65)),
+    url("../images/hero-bg.jpg") center/cover no-repeat;
 }
+
 
 .summary-box {
   background: #f8f9fa;
+}
+
+.order-summary {
+  top: 100px;
+}
+
+.secure-box {
+  background-color: #e9f5ef;
+}
+
+@media (max-width: 991.98px) {
+  .order-summary {
+    position: static !important;
+  }
+}
+
+.shipping-option-box {
+  display: block;
+  border: 1px solid #bfbfbf;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+
+.shipping-option-box:hover {
+  border-color: #198754;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.shipping-option-box input[type="radio"] {
+  margin-right: 10px;
+}
+
+.shipping-option-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-method-input:checked + .shipping-option-content {
+  color: #198754;
 }

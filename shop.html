@@ -28,37 +28,72 @@
 </head>
 <body id="top">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle custom-nav py-3">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
-          <img src="images/logo.png" alt="Aotearoa Adventure Gear logo" class="site-logo" />
-          <span>Aotearoa Adventure Gear</span>
-        </a>
+  <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success-subtle custom-nav py-3">
+        <div class="container">
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <!-- LOGO -->
+          <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+            <img src="images/logo.png" alt="Aotearoa Adventure Gear logo" class="site-logo" />
+          </a>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
-            <li class="nav-item"><a class="nav-link" href="product.html">Product Detail</a></li>
-            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-            <li class="nav-item"><a class="nav-link" href="shipping.html">Shipping</a></li>
-            <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
-          </ul>
+          <!-- TOGGLE -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- MENU -->
+          <div class="collapse navbar-collapse" id="mainNav">
+
+            <!-- LEFT NAV LINKS -->
+              <!-- SEARCH -->
+              <form class="d-flex">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search gear..."
+                  aria-label="Search"
+                >
+              </form>
+
+            <!-- RIGHT SIDE -->
+            <div class="d-flex align-items-center ms-auto gap-3 mt-3 mt-lg-0">
+
+              <ul class="navbar-nav ms-3 align-items-lg-center gap-lg-2">
+                <li class="nav-item">
+                  <a class="nav-link " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="product.html">Product Detail</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="shipping.html">Shipping</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="payment.html">Payment</a>
+                </li>
+                <li class="nav-item">
+                  <!-- CART BUTTON -->
+                 <a href="cart.html" class="btn btn-warning fw-semibold px-3">🛒 Cart</a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
   </header>
 
   <main>
@@ -177,8 +212,21 @@
                     <p class="text-muted small">Durable multi-day backpack with ergonomic support.</p>
                     <p class="fw-bold fs-5 mb-3">$249.00</p>
                     <div class="d-flex gap-2">
-                      <a href="product.html" class="btn btn-success btn-sm">View</a>
-                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    <a href="product.html"
+                      class="btn btn-success btn-sm view-product-btn"
+                      data-name="Alpine Hiking Backpack"
+                      data-price="249"
+                      data-image="images/product-1.jpg"
+                      data-description="Durable multi-day backpack with ergonomic support...">
+                      View
+                    </a>
+                      <a href="cart.html"
+                          class="btn btn-outline-success btn-sm add-to-cart-btn"
+                          data-name="Alpine Hiking Backpack"
+                          data-price="249"
+                          data-image="images/product-1.jpg">
+                          Add to Cart
+                        </a>
                     </div>
                   </div>
                 </article>
@@ -194,8 +242,21 @@
                     <p class="text-muted small">Four-season tent designed for changing alpine weather.</p>
                     <p class="fw-bold fs-5 mb-3">$399.00</p>
                     <div class="d-flex gap-2">
-                      <a href="product.html" class="btn btn-success btn-sm">View</a>
-                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    <a href="product.html"
+                      class="btn btn-success btn-sm view-product-btn"
+                      data-name="Explorer Tent"
+                      data-price="399"
+                      data-image="images/product-2.jpg"
+                      data-description="Four-season tent designed for changing alpine weather...">
+                      View
+                    </a>
+                      <a href="cart.html"
+                        class="btn btn-outline-success btn-sm add-to-cart-btn"
+                        data-name="Explorer Tent"
+                        data-price="399"
+                        data-image="images/product-2.jpg">
+                        Add to Cart
+                      </a>
                     </div>
                   </div>
                 </article>
@@ -211,8 +272,21 @@
                     <p class="text-muted small">Waterproof boots with strong grip for steep terrain.</p>
                     <p class="fw-bold fs-5 mb-3">$189.00</p>
                     <div class="d-flex gap-2">
-                      <a href="product.html" class="btn btn-success btn-sm">View</a>
-                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                    <a href="product.html"
+                      class="btn btn-success btn-sm view-product-btn"
+                      data-name="Trekking Boots"
+                      data-price="189"
+                      data-image="images/product-3.jpg"
+                      data-description="Waterproof boots with strong grip for steep terrain...">
+                      View
+                    </a>
+                      <a href="cart.html"
+                        class="btn btn-outline-success btn-sm add-to-cart-btn"
+                        data-name="Trekking Boots"
+                        data-price="189"
+                        data-image="images/product-3.jpg">
+                        Add to Cart
+                      </a>
                     </div>
                   </div>
                 </article>
@@ -221,15 +295,28 @@
               <!-- Product 4 -->
               <div class="col-sm-6 col-xl-4">
                 <article class="card product-card border-0 shadow-sm h-100">
-                  <img src="images/category-hiking.jpg" class="card-img-top product-img" alt="Hiking poles">
+                  <img src="images/product-4.jpg" class="card-img-top product-img" alt="Hiking poles">
                   <div class="card-body">
                     <p class="small text-success fw-semibold mb-1">Hiking</p>
                     <h3 class="h5">Carbon Hiking Poles</h3>
                     <p class="text-muted small">Lightweight and adjustable poles for trail stability.</p>
                     <p class="fw-bold fs-5 mb-3">$129.00</p>
                     <div class="d-flex gap-2">
-                      <a href="product.html" class="btn btn-success btn-sm">View</a>
-                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                      <a href="product.html"
+                        class="btn btn-success btn-sm view-product-btn"
+                        data-name="Carbon Hiking Poles"
+                        data-price="129"
+                        data-image="images/product-4.jpg"
+                        data-description="Lightweight and adjustable poles for trail stability">
+                        View
+                      </a>
+                      <a href="cart.html"
+                        class="btn btn-outline-success btn-sm add-to-cart-btn"
+                        data-name="Carbon Hiking Poles"
+                        data-price="129"
+                        data-image="images/product-4.jpg">
+                        Add to Cart
+                      </a>
                     </div>
                   </div>
                 </article>
@@ -238,15 +325,28 @@
               <!-- Product 5 -->
               <div class="col-sm-6 col-xl-4">
                 <article class="card product-card border-0 shadow-sm h-100">
-                  <img src="images/category-camping.jpg" class="card-img-top product-img" alt="Camping stove">
+                  <img src="images/product-5.jpg" class="card-img-top product-img" alt="Camping stove">
                   <div class="card-body">
                     <p class="small text-success fw-semibold mb-1">Camping</p>
                     <h3 class="h5">Portable Camping Stove</h3>
                     <p class="text-muted small">Compact cooking setup for overnight and remote campsites.</p>
                     <p class="fw-bold fs-5 mb-3">$89.00</p>
                     <div class="d-flex gap-2">
-                      <a href="product.html" class="btn btn-success btn-sm">View</a>
-                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                      <a href="product.html"
+                        class="btn btn-success btn-sm view-product-btn"
+                        data-name="Portable Camping Stove"
+                        data-price="89"
+                        data-image="images/product-5.jpg"
+                        data-description="Compact cooking setup for overnight and remote campsites...">
+                        View
+                      </a>
+                      <a href="cart.html"
+                        class="btn btn-outline-success btn-sm add-to-cart-btn"
+                        data-name="Portable Camping Stove"
+                        data-price="89"
+                        data-image="images/product-5.jpg">
+                        Add to Cart
+                      </a>
                     </div>
                   </div>
                 </article>
@@ -255,15 +355,28 @@
               <!-- Product 6 -->
               <div class="col-sm-6 col-xl-4">
                 <article class="card product-card border-0 shadow-sm h-100">
-                  <img src="images/category-climbing.jpg" class="card-img-top product-img" alt="Climbing helmet">
+                  <img src="images/product-6.jpg" class="card-img-top product-img" alt="Climbing helmet">
                   <div class="card-body">
                     <p class="small text-success fw-semibold mb-1">Climbing</p>
                     <h3 class="h5">Climbing Helmet</h3>
                     <p class="text-muted small">Protective, lightweight helmet for alpine and sport climbing.</p>
                     <p class="fw-bold fs-5 mb-3">$139.00</p>
                     <div class="d-flex gap-2">
-                      <a href="product.html" class="btn btn-success btn-sm">View</a>
-                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                      <a href="product.html"
+                        class="btn btn-success btn-sm view-product-btn"
+                        data-name="Climbing Helmet"
+                        data-price="139"
+                        data-image="images/product-6.jpg"
+                        data-description="Protective, lightweight helmet for alpine and sport climbing...">
+                        View
+                      </a>
+                      <a href="cart.html"
+                        class="btn btn-outline-success btn-sm add-to-cart-btn"
+                        data-name="Climbing Helmet"
+                        data-price="139"
+                        data-image="images/product-6.jpg">
+                        Add to Cart
+                      </a>
                     </div>
                   </div>
                 </article>
@@ -272,15 +385,28 @@
               <!-- Product 7 -->
               <div class="col-sm-6 col-xl-4">
                 <article class="card product-card border-0 shadow-sm h-100">
-                  <img src="images/category-apparel.jpg" class="card-img-top product-img" alt="Outdoor jacket">
+                  <img src="images/product-7.jpg" class="card-img-top product-img" alt="Outdoor jacket">
                   <div class="card-body">
                     <p class="small text-success fw-semibold mb-1">Apparel</p>
                     <h3 class="h5">Stormproof Jacket</h3>
                     <p class="text-muted small">Weather-resistant shell jacket for unpredictable conditions.</p>
                     <p class="fw-bold fs-5 mb-3">$279.00</p>
                     <div class="d-flex gap-2">
-                      <a href="product.html" class="btn btn-success btn-sm">View</a>
-                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                      <a href="product.html"
+                        class="btn btn-success btn-sm view-product-btn"
+                        data-name="Stormproof Jacket"
+                        data-price="279"
+                        data-image="images/product-7.jpg"
+                        data-description="Weather-resistant shell jacket for unpredictable conditions...">
+                        View
+                      </a>
+                      <a href="cart.html"
+                        class="btn btn-outline-success btn-sm add-to-cart-btn"
+                        data-name="Stormproof Jacket"
+                        data-price="279"
+                        data-image="images/product-7.jpg">
+                        Add to Cart
+                      </a>
                     </div>
                   </div>
                 </article>
@@ -289,15 +415,28 @@
               <!-- Product 8 -->
               <div class="col-sm-6 col-xl-4">
                 <article class="card product-card border-0 shadow-sm h-100">
-                  <img src="images/product-1.jpg" class="card-img-top product-img" alt="Hydration pack">
+                  <img src="images/product-8.jpg" class="card-img-top product-img" alt="Hydration pack">
                   <div class="card-body">
                     <p class="small text-success fw-semibold mb-1">Hiking</p>
                     <h3 class="h5">Hydration Pack</h3>
                     <p class="text-muted small">Compact hydration pack for fast-moving outdoor activities.</p>
                     <p class="fw-bold fs-5 mb-3">$99.00</p>
                     <div class="d-flex gap-2">
-                      <a href="product.html" class="btn btn-success btn-sm">View</a>
-                      <a href="cart.html" class="btn btn-outline-success btn-sm">Add to Cart</a>
+                      <a href="product.html"
+                        class="btn btn-success btn-sm view-product-btn"
+                        data-name="Hydration Pack"
+                        data-price="99"
+                        data-image="images/product-8.jpg"
+                        data-description="Compact hydration pack for fast-moving outdoor activities...">
+                        View
+                      </a>
+                      <a href="cart.html"
+                        class="btn btn-outline-success btn-sm add-to-cart-btn"
+                        data-name="Hydration Pack"
+                        data-price="99"
+                        data-image="images/product-8.jpg">
+                        Add to Cart
+                      </a>
                     </div>
                   </div>
                 </article>
